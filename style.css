@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(47,150,163), rgb(28,62,143));
+    background-image: url("noaa-Y7GUOQ83OMg-unsplash.jpg");
+    background-size: cover;
+    font-family: 'Trispace', sans-serif;
+    color:#ffff;
+}
+
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3em 0.5em; 
+}
+
+header input{
+    width:100%;
+    max-width: 200px;
+    background-color: rgba(255, 255, 255, 0.418);
+    border:none;
+    border-bottom: 5px solid rgba(255, 145, 0, 0.89);
+    border-radius: 15px 0;
+    font-size: 20px;
+    font-weight: 200;
+    color:rgb(0, 0, 0);
+    transition: 0.3 ease-in-out;
+    outline:none;
+    padding:15px 25px;
+    
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.418);
+}
+
+header input:focus{
+    background-color: rgba(175, 162, 162, 0.548);
+}
+
+main{
+    display: flex;
+    flex: 1 1 100%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding:10px 20px 50px;
+}
+
+.location .city{
+    color:#ffff;
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 0.5em;
+}
+
+.location .date{
+    color:#ffff;
+    font-size:1em;
+    font-weight: 100;
+}
+
+.current .temp{
+    margin:0.5em 0  ;
+    color:#ffff;
+    font-size: 7em;
+    font-weight: 900;
+    text-shadow: 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp span{
+    font-weight: 500;
+}
+
+.current .weather{
+    margin-bottom:0.3em;
+    color:#ffff;
+    font-size: 1.5em;
+    font-weight: 70;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+    font-style: italic;
+}
+
+.current .hi-low{
+    color: #ffff;
+    font-size: 1em;
+    font-weight: 100;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+
+}
